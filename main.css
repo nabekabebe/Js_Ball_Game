@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 92vh;
+  position: relative;
+}
+canvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
+  border-right: 10px solid green;
+  border-left: 10px solid green;
+}
+.arena {
+  width: 680px;
+}
+.methods {
+  padding-bottom: 2rem;
+}
+.game-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a12d5f;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.selector {
+  width: 300px;
+}
+.score-board {
+  width: 200px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+.comp,
+.user {
+  font-size: 1.8rem;
+  padding: 0 1rem;
+}
+.comp-score {
+  color: red;
+}
+.user-score {
+  color: blue;
+}
+.score_history {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 250px;
+  background-color: black;
+  height: 500px;
+  text-align: center;
+  overflow-y: scroll;
+}
+.score_history p,
+.score_history li {
+  padding-bottom: 1rem;
+  color: white;
+}
